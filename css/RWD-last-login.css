@@ -1,0 +1,121 @@
+
+/* content start */
+.content-logo{
+    text-align: center;
+    margin: 50px 0 5px 0;
+}
+.content > h2{
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3D1101;
+    margin-bottom: 35px;
+}
+.login{
+    margin: 0 auto;
+    padding: 2.5%;
+    width: 270px;
+    background: #EFE9E7;
+    border-top:4px solid #FF5E45;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+.login h2{
+    margin: 0 0 16px 0;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    font-size: 18px;
+    color: #3D1101;
+}
+.form{
+    width: 270px;
+    float: left;
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    color: #3D1101;
+}
+.form input{
+    width: 259px;
+    padding: 10px 0 10px 9px;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+}
+.form input.Email{
+    margin:3px 0 15px 0;
+}
+
+.form input.empty {
+    font-family: FontAwesome,微軟正黑體;
+    color: rgba(61,17,0,0.50);
+}
+.form input.password{
+    margin:3px 0 1px 0;
+}
+.form p{
+    margin-top: 1px;
+    margin-bottom: 30px;
+    font-family: 微軟正黑體;
+    font-size: 14px;
+    color: #FF5E45;
+}
+.button{
+    
+}
+.button .submit-login{
+    float: left;
+    width: 125px;
+    height: 32px;
+    padding: 0;
+    font-family: 微軟正黑體;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: rgba(0,0,0,0.35);
+    box-shadow: none;
+}
+.button .submit{
+    float: right;
+    width: 125px;
+    height: 32px;
+    padding: 0;
+    font-family: 微軟正黑體;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #F56C23;
+    box-shadow: none;
+}
+
+@media(max-width:768px){
+    .register{
+        max-width: 80%;
+    }
+    .terms{
+        float: none;
+        margin-right: 0;
+    }
+    .terms h3{
+        text-align: center;
+    }
+    .terms p{
+        margin: auto;
+        margin-top: 5px;
+        max-width: 100%;
+    }
+    .form{
+        margin: 30px auto;
+        max-width: 285px;
+        float: none;
+    }
+}
+@media(max-width:767px) and (min-width:569px){
+
+}
+@media(max-width:568px){
+    .login{
+        margin: 0 auto;  
+    }
+    .form p{
+        margin-bottom: 10px;
+    }
+}

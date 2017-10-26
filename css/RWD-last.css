@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+/* css reset end */
+/* banner start */
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+    background: #EFE9E7;
+}
+.banner{
+    background: url('images/header_desktop.png');
+    height: 420px;
+}
+.header{
+    background: rgba(0,0,0,0.75);
+    height: 56px;
+}
+.logo{
+    float: left;
+    margin: 16px auto 16px 42px;
+    color: #fff;
+    font-family:微軟正黑體;
+    font-weight:bold;
+    font-size: 24px;
+}
+.banner .menu {
+    float: right;
+}
+.banner .menu li{
+    float: left;
+}
+.banner .menu li a{
+    display: block;
+    color: #fff;
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    padding: 20px;
+    background: rgba(0,0,0,0.75);
+}
+.banner .menu li a:hover{
+    color: #000000;
+    background: rgba(255, 255, 255, 0.75);
+}
+.showmenu{
+    display: none;
+}
+.banner-box{
+    margin: 0 auto;
+    margin-top: 67px;
+    width: 460px;
+    height: 152px;
+    background: rgba(0, 0, 0, 0.5);
+    /* opacity:0.35;
+    filter:alpha(opacity=35);
+    -moz-opacity:0.35; */
+}
+.banner-box h2{
+    font-family: 微軟正黑體;
+    font-size: 36px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.banner-box p{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 25px;
+}
+/* 咬一口斷句用br */
+.h2-br{
+    display: none;
+}
+@media(max-width:768px){
+    .banner{
+        background: url('images/header_mobile.png') no-repeat center;
+        background-color: black;
+        height: 420px;
+    }
+}
+@media(max-width:568px){
+    .banner .menu {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 1.3s;
+        margin: 0;
+        position: absolute;
+        z-index: 100;
+        top: 56px;
+        left: 0;
+        right: 0;  
+    }
+    .banner .menu li{
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75)fff;
+    }
+    .banner .menu li a{
+        transition: all .3s;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .showmenu{
+        display: block;
+        float: right;
+        font-size: 24px;
+        color: #FFFFFF;
+        margin: 16px 22px 0 0;
+    }
+    .menu-show .banner .menu{
+        max-height: 200px;
+    }
+    
+    .logo{
+        font-size: 18px;
+        margin: 16px auto 16px 13px;
+        }
+    .banner-box{
+        width: 300px;
+        height: 194px;
+    }
+    .banner-box p{
+        line-height: 22px;
+    }
+    .h2-br{
+        display: block;
+    }
+}
+/* banner end */
+
+
+/* footer  start*/
+.footer{
+    margin: 50px 27px 0 27px;
+    max-width: 100%;
+}
+.footer-box1 {
+    float: left; 
+}
+.footer-box1 h2{
+    font-family: 微軟正黑體;
+    color: #3D1101 ;
+    font-size: 24px;
+    margin:0 16px 16px 16px;
+}
+.footer-box1 p{
+    font-family: 微軟正黑體;
+    color: #3D1101;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 16px 16px 23px 16px;
+    max-width: 300px;
+    
+}
+.footer-box2 {
+    float: left;
+}
+.footer-box2 h2{
+    font-family: 微軟正黑體;
+    color: #3D1101 ;
+    font-size: 24px;
+    margin:0 16px 16px 16px;
+}
+.footer-box2 p{
+    font-family: 微軟正黑體;
+    color: #3D1101;
+    font-size: 16px;
+    margin: 16px 16px 30px 16px;
+    line-height: 20px;
+}
+.footer-logo{
+    float: right;
+}
+.footer-logo > a{
+    float: right;
+}
+.footer-icon {
+    margin-left:45%;
+}
+.footer-icon  li {
+    float: left;
+    margin: 22px 0 24px 12px;
+}
+.google i{
+    font-size: 36px;
+    color: #DB4437;
+}
+.twitter i{
+    font-size: 36px;
+    color: #41ABE1;
+}
+.facebook i{
+    font-size: 36px;
+    color: #3A5795;
+}
+.clearfix{
+    clear: both;
+}
+.clear{
+    clear: left;
+}
+
+@media(max-width:768px){
+    .footer-box1{
+        max-width: 48%;
+    }
+    .footer-box2{
+        max-width: 48%;
+    }
+    .footer-logo{
+        max-width: 90%;
+    }
+}
+@media(max-width:568px){
+    .footer{
+        margin: 50px 2.5% 0 2.5%;
+    }
+    .footer-box1{
+        max-width: 95%;
+    }
+    .footer-box1 h2{
+        margin:0 0 0 0;
+    }
+    .footer-box1 p{
+        max-width: 100%;
+        margin:16px 0 0 0;
+    }
+    .footer-box2{
+        max-width: 95%;
+    }
+    .footer-box2 h2{
+        margin:30px 0 0 0;
+    }
+    .footer-box2 p{
+        max-width: 100%;
+        margin:16px 0 30px 0;
+    }
+    .footer-logo{
+        max-width: 95%;
+    }
+    .footer-icon {
+        margin-left:43%;
+    }
+}
